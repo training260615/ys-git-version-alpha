@@ -29,7 +29,7 @@ function App() {
         }
       })
 
-      if(!res.ok) {
+      if (!res.ok) {
         throw new Error();
       }
 
@@ -46,7 +46,7 @@ function App() {
 
   return (
     <StyledContainer>
-      <Typography variant="h1" sx={{fontSize: "32px"}}>今日やること</Typography>
+      <Typography variant="h1" sx={{ fontSize: "32px" }}>今日やること</Typography>
       <InputForm getData={getTodoList} />
       <List getData={getTodoList} todoList={todoList} />
     </StyledContainer>
